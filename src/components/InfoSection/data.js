@@ -1,19 +1,19 @@
-import updateProfile from '../../images/updateProfile.png'
-import phoneOptions from '../../images/phoneHold.jpg'
-import secureInfo from '../../images/secureInfo.png'
+import Dress1 from '../../images/dress1.jpg'
+import Dress2 from '../../images/dress2.jpg'
+import Dress3 from '../../images/dress3.jpg'
 
 export const homeObjectOne = {
     id: 'profile',
     lightBg: true,
     lightText: false,
     lightTextDesc: false,
-    topLine: 'Premium Service',
-    headline: 'Create the perfect portfolio',
+    topLine: 'I Do',
+    headline: 'Dresses and stuff',
     description: 'Gain access to an advanced set of tools and tips'
      + ' to fully maximize the success of your portfolio.',
     buttonLabel: 'Get Started',
     imgStart: false,
-    infoImage: updateProfile,
+    infoImage: Dress1,
     alt: 'Updating Portfolio',
     dark: false,
     primary: false,
@@ -25,13 +25,13 @@ export const homeObjectTwo = {
     lightBg: false,
     lightText: true,
     lightTextDesc: true,
-    topLine: 'Premium Service',
-    headline: 'Manage Contacts On The Go',
+    topLine: 'I Do',
+    headline: 'Dresses and stuff',
     description: 'Instant messaging for both Android and IOS'
      + '. Allowing you to connect anytime, anywhere.',
     buttonLabel: 'Get Started',
     imgStart: false,
-    infoImage: phoneOptions,
+    infoImage: Dress2,
     alt: 'Updating Portfolio',
     dark: true,
     primary: true,
@@ -43,13 +43,13 @@ export const homeObjectThree = {
     lightBg: true,
     lightText: false,
     lightTextDesc: false,
-    topLine: 'Premium Service',
-    headline: 'Secure Information',
+    topLine: 'I do',
+    headline: 'Dresses and stuff',
     description: 'Modern encryption ensuring'
      + ' that your information is 100% safe.',
     buttonLabel: 'Get Started',
     imgStart: false,
-    infoImage: secureInfo,
+    infoImage: Dress3,
     alt: 'Updating Portfolio',
     dark: false,
     primary: false,

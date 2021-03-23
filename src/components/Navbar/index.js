@@ -16,26 +16,23 @@ const Navbar = ({toggle}) => {
         <>
             <Nav>
                 <NavbarContainer>
-                    <NavLogo to="/"> Obsidian </NavLogo>
+                    <NavLogo to="/"> Anjie Connon Works </NavLogo>
                     <MobileIcon onClick={toggle}>
                         <FaBars />
                     </MobileIcon>
                     <NavMenu>
                         <NavItem>
-                            <NavLinks to="profile">About</NavLinks>
+                            <NavLinks to="artwork">Artwork</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="contacts">Discover</NavLinks>
+                            <NavLinks to="bio">Bio</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="security">Services</NavLinks>
-                        </NavItem>
-                        <NavItem>
-                            <NavLinks to="signup">Sign Up</NavLinks>
+                            <NavLinks to="exhibitions">Exhibitions</NavLinks>
                         </NavItem>
                     </NavMenu>
                     <NavBtn>
-                        <NavBtnLink to="/signin">Sign In</NavBtnLink>
+                        <NavBtnLink to="/contact">Contact Details</NavBtnLink>
                     </NavBtn>
                 </NavbarContainer>
             </Nav>
