@@ -16,7 +16,7 @@ const Navbar = ({toggle}) => {
         <>
             <Nav>
                 <NavbarContainer>
-                    <NavLogo to="/home"> Anjie Connon Works </NavLogo>
+                    <NavLogo to="/home"> Anjie Connon Artwork </NavLogo>
                     <MobileIcon onClick={toggle}>
                         <FaBars />
                     </MobileIcon>
@@ -28,7 +28,7 @@ const Navbar = ({toggle}) => {
                             <NavLinks to="bio">Bio</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="exhibitions">Exhibitions</NavLinks>
+                            <NavLinks to="shows">Shows</NavLinks>
                         </NavItem>
                     </NavMenu>
                     <NavBtn>

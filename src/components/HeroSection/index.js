@@ -28,12 +28,12 @@ const HeroSection = () => {
             </HeroBg>
 
             <HeroContent>
-                <HeroH1> Experience Something New </HeroH1>
-                <HeroP>Sign up this month and receive a 20% discount.</HeroP>
+                <HeroH1> A Life Behind the Camera </HeroH1>
+                <HeroP> Explore Collections of beautiful photography </HeroP>
                 <HeroBtnWrapper>
-                    <Button to="signup" onMouseEnter={onHover} onMouseLeave={onHover} primary="true" 
+                    <Button to="artwork" onMouseEnter={onHover} onMouseLeave={onHover} primary="true" 
                     dark="true"
-                    >Get started{hover? <ArrowForward/> : <ArrowRight />}</Button>
+                    >See More{hover? <ArrowForward/> : <ArrowRight />}</Button>
                 </HeroBtnWrapper>
             </HeroContent>
 
