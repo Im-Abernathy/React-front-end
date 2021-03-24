@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaFacebook, FaYoutube, FaInstagram} from 'react-icons/fa'
 import {FooterContainer, FooterWrap, FooterLinksContainer, 
-        FooterLinksWrapper, FooterLinkItems, FooterLinkTitle,
+        FooterLinksWrapper, FooterLinkItems,
         FooterLink, SocialMedia, SocialMediaWrap, SocialLogo, 
         WebsiteRights, SocialIcons, SocialIconLink
         } from './FooterElements'
@@ -17,42 +17,21 @@ const Footer = () => {
 
             <FooterLinksWrapper>
                 <FooterLinkItems>
-                    <FooterLinkTitle> About Us </FooterLinkTitle>
-                    <FooterLink to="/signin">How it Works</FooterLink>
-                    <FooterLink to="/signin">Testimonials</FooterLink>
-                    <FooterLink to="/signin">Investors</FooterLink>
-                    <FooterLink to="/signin">Careers</FooterLink>
-                    <FooterLink to="/signin">Terms of Service</FooterLink>
-                </FooterLinkItems>
-                <FooterLinkItems>
-                    <FooterLinkTitle> About Us </FooterLinkTitle>
-                    <FooterLink to="/signin">How it Works</FooterLink>
-                    <FooterLink to="/signin">Testimonials</FooterLink>
-                    <FooterLink to="/signin">Investors</FooterLink>
-                    <FooterLink to="/signin">Careers</FooterLink>
-                    <FooterLink to="/signin">Terms of Service</FooterLink>
+                    <FooterLink to="/home">Home Page</FooterLink>
+                    <FooterLink to="/artwork">Artwork</FooterLink>
+                    <FooterLink to="/shows">Shows</FooterLink>
+                    
                 </FooterLinkItems>
             </FooterLinksWrapper>
 
             <FooterLinksWrapper>
                 <FooterLinkItems>
-                    <FooterLinkTitle> About Us </FooterLinkTitle>
-                    <FooterLink to="/signin">How it Works</FooterLink>
-                    <FooterLink to="/signin">Testimonials</FooterLink>
-                    <FooterLink to="/signin">Investors</FooterLink>
-                    <FooterLink to="/signin">Careers</FooterLink>
-                    <FooterLink to="/signin">Terms of Service</FooterLink>
-                </FooterLinkItems>
-                <FooterLinkItems>
-                    <FooterLinkTitle> About Us </FooterLinkTitle>
-                    <FooterLink to="/signin">How it Works</FooterLink>
-                    <FooterLink to="/signin">Testimonials</FooterLink>
-                    <FooterLink to="/signin">Investors</FooterLink>
-                    <FooterLink to="/signin">Careers</FooterLink>
-                    <FooterLink to="/signin">Terms of Service</FooterLink>
+                    <FooterLink to="/bio">Bio</FooterLink>
+                    <FooterLink to="/contact">Contact Us</FooterLink>
+                    <FooterLink to="/terms">Terms of Service</FooterLink>
                 </FooterLinkItems>
             </FooterLinksWrapper>
-            
+
         </FooterLinksContainer>
 
         <SocialMedia>

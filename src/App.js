@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom';
 import Home from './pages';
 import Artwork from './pages/artwork'
 import ContactPage from './pages/contact';
@@ -26,8 +26,9 @@ function App() {
       <Sidebar isOpen={isOpen} toggle={toggle}/>
       <Navbar toggle={toggle}/>
       
+      <Redirect to="/home" />
 
-      <Switch>
+      <Switch>  
         <Route path="/home" component={Home} exact/>
         <Route path="/artwork" component={Artwork} exact/>
         <Route path="/bio" component={Bio} exact/>

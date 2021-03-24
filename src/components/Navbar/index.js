@@ -12,6 +12,7 @@ import {Nav,
     } from './NavbarElements';
 
 const Navbar = ({toggle}) => {
+
     return (
         <>
             <Nav>
@@ -22,17 +23,17 @@ const Navbar = ({toggle}) => {
                     </MobileIcon>
                     <NavMenu>
                         <NavItem>
-                            <NavLinks to="artwork">Artwork</NavLinks>
+                            <NavLinks to="/artwork" activeClassName="active">Artwork</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="bio">Bio</NavLinks>
+                            <NavLinks to="/bio" activeClassName="active">Bio</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="shows">Shows</NavLinks>
+                            <NavLinks to="/shows" activeClassName="active">Shows</NavLinks>
                         </NavItem>
                     </NavMenu>
                     <NavBtn>
-                        <NavBtnLink to="/contact">Contact Details</NavBtnLink>
+                        <NavBtnLink to="/contact" activeClassName="active">Contact Details</NavBtnLink>
                     </NavBtn>
                 </NavbarContainer>
             </Nav>

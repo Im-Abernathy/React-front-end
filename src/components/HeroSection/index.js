@@ -31,9 +31,8 @@ const HeroSection = () => {
                 <HeroH1> A Life Behind the Camera </HeroH1>
                 <HeroP> Explore Collections of beautiful photography </HeroP>
                 <HeroBtnWrapper>
-                    <Button to="artwork" onMouseEnter={onHover} onMouseLeave={onHover} primary="true" 
-                    dark="true"
-                    >See More{hover? <ArrowForward/> : <ArrowRight />}</Button>
+                    <Button to="/artwork" onMouseEnter={onHover} onMouseLeave={onHover} primary="true" 
+                    dark="true"> See More {hover? <ArrowForward/> : <ArrowRight />}</Button>
                 </HeroBtnWrapper>
             </HeroContent>
 

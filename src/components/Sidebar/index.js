@@ -9,21 +9,21 @@ const Sidebar = ({isOpen, toggle}) => {
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
-                    <SidebarLink to="about" onClick={toggle}>
-                        About
+                    <SidebarLink to="home" onClick={toggle}>
+                        Home
                     </SidebarLink>
-                    <SidebarLink to="discover" onClick={toggle}> 
-                        Discover
+                    <SidebarLink to="artwork" onClick={toggle}> 
+                        Artwork
                     </SidebarLink>
-                    <SidebarLink to="services" onClick={toggle}>
-                        Services
+                    <SidebarLink to="bio" onClick={toggle}>
+                        Bio
                     </SidebarLink>
-                    <SidebarLink to="signup" onClick={toggle}>
-                        Sign Up
+                    <SidebarLink to="shows" onClick={toggle}>
+                        Shows
                     </SidebarLink>
                 </SidebarMenu>
                 <SideBtnWrap>
-                    <SidebarRoute to="/signin">Sign In</SidebarRoute>
+                    <SidebarRoute to="/contact">Contact Us</SidebarRoute>
                 </SideBtnWrap>
             </SidebarWrapper>
         </SidebarContainer>

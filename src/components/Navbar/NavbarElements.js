@@ -1,6 +1,5 @@
 import styled from 'styled-components'
-import {Link as LinkR} from 'react-router-dom'
-import {Link as LinkS} from 'react-router-dom'
+import {Link as LinkR, NavLink} from 'react-router-dom'
 
 export const Nav = styled.nav`
     background: #1f1e1e;
@@ -77,7 +76,7 @@ export const NavItem = styled.li`
     height: 80px;
 `;
 
-export const NavLinks = styled(LinkS)`
+export const NavLinks = styled(NavLink)`
     color: #fff;
     display: flex;
     align-items: center;
@@ -87,15 +86,19 @@ export const NavLinks = styled(LinkS)`
     cursor: pointer;
     font-size: 1.2em;
 
-    &.active {
-        border-bottom: 3px solid #F9A826;
-    }
-
     &:hover {
         transition: all 0.2s easin-in-out;
         color: #F9A826;
     }
+
+    &.active {
+        color: #F9A826;
+        border-bottom: 4px solid #F9A826;
+    }
 `;
+
+
+
 
 export const NavBtn = styled.nav`
     display: flex;
