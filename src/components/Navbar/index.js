@@ -1,40 +1,43 @@
 import React from 'react';
 import {FaBars} from 'react-icons/fa'
+import {animateScroll} from 'react-scroll'
 import {Nav, 
     NavbarContainer, 
     NavLogo, 
     MobileIcon,
     NavMenu, 
     NavItem, 
-    NavLinks,
-    NavBtn,
-    NavBtnLink
+    NavLinks
     } from './NavbarElements';
 
 const Navbar = ({toggle}) => {
+
+    const toggleTop = () => {
+        animateScroll.scrollToTop();
+    }
 
     return (
         <>
             <Nav>
                 <NavbarContainer>
-                    <NavLogo to="/home"> Anjie Connon Artwork </NavLogo>
+                    <NavLogo to="/home" onClick={toggleTop}> Anjie Connon Artwork </NavLogo>
                     <MobileIcon onClick={toggle}>
                         <FaBars />
                     </MobileIcon>
                     <NavMenu>
                         <NavItem>
-                            <NavLinks to="/artwork" activeClassName="active">Artwork</NavLinks>
+                            <NavLinks to="/artwork" onClick={toggleTop} activeClassName="active">Artwork</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="/bio" activeClassName="active">Bio</NavLinks>
+                            <NavLinks to="/bio" onClick={toggleTop} activeClassName="active">Bio</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="/shows" activeClassName="active">Shows</NavLinks>
+                            <NavLinks to="/shows" onClick={toggleTop} activeClassName="active">Shows</NavLinks>
+                        </NavItem>
+                        <NavItem>
+                            <NavLinks to="/contact" onClick={toggleTop} activeClassName="active">Contact Us</NavLinks>
                         </NavItem>
                     </NavMenu>
-                    <NavBtn>
-                        <NavBtnLink to="/contact" activeClassName="active">Contact Details</NavBtnLink>
-                    </NavBtn>
                 </NavbarContainer>
             </Nav>
         </>
